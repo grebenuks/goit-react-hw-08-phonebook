@@ -1,11 +1,11 @@
-import { createStore, combineReducers } from 'redux';
-import { profileReducer } from './reducers';
+import { applyMiddleware, createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { logger } from '../middleWares/logger';
+import { phonebookReducer } from './reducers';
 
-const rootReducers = combineReducers({
-  profile: profileReducer,
-});
-
-export const store = createStore(
-  rootReducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+const middleWares = [logger];
+const store = createStore(
+  phonebookReducer,
+  composeWithDevTools(applyMiddleware(...middleWares)),
 );
+export default store;
