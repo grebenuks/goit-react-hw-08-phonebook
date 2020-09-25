@@ -9,6 +9,7 @@ export const useRouter = auth => {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
+        <Redirect to="/" />
       </Switch>
     );
   }
