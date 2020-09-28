@@ -10,7 +10,7 @@ function Form() {
   const [state, setState] = useState({ name: '', number: '' });
 
   const dispatch = useDispatch();
-  const items = useSelector(state => state.contacts.items);
+  const items = useSelector(state => state.phonebook.contacts.items);
 
   const handleNameChange = ({ target: { name, value } }) => {
     setState(prev => ({ ...prev, [name]: value }));

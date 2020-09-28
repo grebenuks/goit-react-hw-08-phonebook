@@ -56,9 +56,9 @@ ContactList.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  value: state.contacts.filteredItems
-    ? state.contacts.filteredItems
-    : state.contacts.items,
+  value: state.phonebook.contacts.filteredItems
+    ? state.phonebook.contacts.filteredItems
+    : state.phonebook.contacts.items,
 });
 
 export default connect(mapStateToProps, {

@@ -1,0 +1,19 @@
+.reg-log-form {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.form-input {
+  margin-right: 10px;
+}
+.form-button {
+  background-color: rgba(11, 243, 243, 0.507);
+  border-radius: 5px;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+.home-title {
+  text-align: center;
+}

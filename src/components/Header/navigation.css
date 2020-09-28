@@ -1,0 +1,47 @@
+.header {
+  background-color: rgba(0, 0, 255, 0.575);
+  display: flex;
+  margin-bottom: 10px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  color: white;
+  margin: 0px;
+}
+.log-list {
+  margin-left: auto;
+}
+.nav-link {
+  padding: 20px;
+}
+.nav-link-item {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-item-active {
+  color: tomato;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-container {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.name {
+  color: antiquewhite;
+  padding-right: 10px;
+}
+
+.logout {
+  border-radius: 5px;
+}
+
+.avatar {
+  margin-right: 5px;
+}

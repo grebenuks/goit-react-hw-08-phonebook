@@ -35,7 +35,7 @@ Filter.propTypes = {
   getFilterName: PropTypes.func,
 };
 
-const mapStateToProps = state => ({ filter: state.contacts.filter });
+const mapStateToProps = state => ({ filter: state.phonebook.contacts.filter });
 
 const mapDispatchToProps = {
   getFilterValue,
