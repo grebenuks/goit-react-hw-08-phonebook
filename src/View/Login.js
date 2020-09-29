@@ -26,6 +26,7 @@ const Login = () => {
       <label className="form-label">
         Password
         <input
+          type="password"
           className="form-input"
           onChange={evt => setpassword(evt.target.value)}
           value={password}
